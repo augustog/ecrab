@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from ECrab_Web import views
 
 urlpatterns = [
-    url(r'^ecrab/$', admin.site.url),
+    url(r'^$', views.saludo),
 ]
