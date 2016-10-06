@@ -18,5 +18,5 @@ from django.contrib import admin
 from ECrab_Web import views
 
 urlpatterns = [
-    url(r'^$', views.saludo),
+    url(r'^$', views.login),
 ]

@@ -10,14 +10,6 @@ from django.shortcuts import render
 #def perfil(request):
 #	pass
 
-def saludo (request):
+def login (request):
 
-	nombre = "ECrab"
-	pagina = "ecrab.com"
-	tupla = (1,2,3,4,5,6,7,8,9,10)
-		context = {
-		'saludo': 'somos geniales',
-		'nombre': nombre,
-		'tupla': tupla,
-	}
-	return render(request, 'saludo.html', context)
+	return render(request, 'weblog.html')
