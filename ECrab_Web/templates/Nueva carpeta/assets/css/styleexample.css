@@ -1,0 +1,183 @@
+*{margin: 0; padding: 0}
+body {
+    background-color: #333; 
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    text-align: center; 
+}
+img.iconochico{
+  width: 15px; height: 15px;
+  display:block;
+}
+
+
+img.perfil{
+  width: 50px; height: 50px;
+  display:block;
+}
+
+img.icono{
+  width: 30px; height: 30px;
+  display:block;
+
+}
+
+img.fotoperfil {
+    width: 150px; height: 150px;
+    display:block;
+
+}
+
+/*=======================================
+	NAV MENUTOP
+==================================================*/
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+nav ul li:hover {
+  background: #3ead47;
+}
+/*=======================================
+    SECTION PRINCIPAL
+==================================================*/
+
+#contenedor{ 
+    text-align: center; 
+
+    width: auto; 
+} 
+
+#principal{
+    float:left; 
+    text-align: center;
+    width: 65%; 
+   
+} 
+
+#portada{
+    float:left; 
+    background-color: #D4D4D4;
+    text-align: center;
+    width: 100%; 
+    padding: 5%;
+
+   
+}  
+
+#perfil{ 
+
+    margin: auto;
+    text-align: center; 
+    padding: 4px; 
+    width:150px;
+} 
+
+/*=======================================
+	NAV MENUSEC
+==================================================*/
+
+
+#menusec{
+	width: 110%;
+}
+
+hr{display:none;}
+
+ul.menusec {
+	list-style: none;
+	text-align: center;
+}
+
+ul.menusec li {
+	width: 25%;
+	padding-top:1.25%;
+	padding-bottom: 1.25%;
+	background-color: #F7FE2E;
+	float:left;
+}
+
+ul.menusec li a:link, ul.menusec li a:visited {
+	text-decoration: none;
+	color:#fff;
+}
+
+ul.menusec li:hover {
+	background-color: #FFD700;
+}
+
+/*=======================================
+    AGENDA
+==================================================*/
+
+#agenda{ 
+
+    background-color: #D4D4D4;
+    float: right;   
+    width: 21%; 
+    height: 500px;
+    overflow:auto;
+    color:#fff;
+
+} 
+
+
+hr{display:none;}
+
+
+ul.agenda li {
+	background-color: #F7FE2E;
+	padding: 3%;
+}
+
+ul.agenda li:last-child {
+	border-bottom: groove blue;
+	border-bottom-width: 6px;
+}
+ul.agenda li a:link, ul.agenda li a:visited {
+	text-decoration: none;
+	color:#fff;
+}
+ul.agenda li:hover {
+	background-color: #FFD700;
+}
+
+#recordatorio {
+	margin: 10%; 
+	padding: 3%;
+	text-align: left;
+	background-color: #FFD700;
+}
+
+
+#tareas {
+	margin: 5%;
+	background-color: #F7FE2E;
+	padding: 3%;
+}
+
