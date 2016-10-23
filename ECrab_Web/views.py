@@ -3,14 +3,24 @@ from django.http import HttpResponse
 import datetime
 
 # Create your views here.
+
+def home (request):
+
+    now= datetime.datetime.now()
+    t = template ("<body><p>Hoy es {{fecha}}</p></body>")
+    c = context ({"fecha":'now'})
+    html = t.render(c)
+   
+    return HttpResponse(html)
+
 #def login(request):
-#	pass 
+#   pass 
 #
 #def listas (request):
-#	pass
+#   pass
 #
 #def perfil(request):
-#	pass
+#   pass
 
 """def login_user(request):
     logout(request)
@@ -30,10 +40,3 @@ import datetime
 def main(request):
     ...."""
 
-def home (request):
-
-    now = datetime.datetime.now()
-    t = template ('webhome.html')
-    c = context ({"fecha": "now"})
-    t.render(c)
-    return render(request)
