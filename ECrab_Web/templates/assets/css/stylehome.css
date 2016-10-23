@@ -1,113 +1,112 @@
-*{margin: 0; padding: 0}
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-    background-color: #91AA9D; 
     font-family: 'Open Sans', sans-serif;
     font-size:14px;
-    margin: 10 0 10 0px; 
     text-align: center; 
-} 
-
-
-
-
-
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: 'Open Sans', sans-serif;
 }
-
-h1 {
-    margin-top:320px;
-    text-transform:uppercase;
-   
-}
-h2 {
-    color: #084B8A;
-}
-    h2:after {
-      display: block;
-content: "";
-height: 2px;
-width: 150px;
-background: #E6E6E6
-margin: 10px auto 40px;
-
-    }
-    
-
-h3 {
-    line-height:30px;
-    padding-bottom:20px;
-}
-h4 {
-    line-height:40px;
-}
-
+ 
+/*Agregamos margenes inferiores a los parrafos*/
 p {
-    font-weight:300;
-    line-height:30px;
-    padding-bottom:20px;
+  margin-bottom: 5px;
 }
 
-.space-pad {
-    padding-bottom:50px;
-    padding-top:50px;
+/*---------------------------------------------------
+  COLORES
+-----------------------------------------------------*/
+
+.colorBackgroundBody{
+  background-color: #004E2C;
 }
 
+/*color Menu Hover*/
+nav ul li:hover {
+  background: #3ead47;
+}
+/*color Menusec*/
+ul.menusec li {
+  background-color: #2D4768;
+}
+/*color Menusec Hover*/
+ul.menusec li:hover {
+  background-color: #008148;
+}
+.colorPortada{
+    background-color: #2D6F68;
+}
+.colorBackgroundAgenda{
+    background-color: #2D6F68;
+}
+.colorRecordatorio{
+  background-color: #2D4768;
+}
+.colorTareas{
+  background-color: #008148;
+}
+.colorBackgroundCuerpo{
+  background-color: #333;
+}
+.colorBackgroundPublicar{
+  background-color: #ccc
+}
+/*---------------------------------------------------
+  HEADER MENUTOP
+-----------------------------------------------------*/
 
-section {
-    padding-top:50px;
-    padding-bottom:40px;
+header {
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
-/*=======================================
-    NAVIGATION STYLES
-==================================================*/
-.navbar a {
-    color:#ffffff !important;
+.menuizq{
+  float: left; /* Desplazamos el nav hacia la izquierda */
 }
-.navbar-header a {
-    color:#ffffff !important;
-    padding-right:100px;
+.menuder{
+  float: right; /* Desplazamos el nav hacia la derecha */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+
+
+.contenido {
+  padding-top: 80px;
 }
 
-nav {
-    position: absolute;
-    width: 100%;
-    background: #fff;
-    z-index:99;
-}
-.fixed {
-    position: fixed; 
-    top: 0; 
-    min-height: 50px; 
-    z-index: 99;
+.wrapper {
+  width: 95%;
+  margin: auto;
+  overflow:hidden;
 }
 
-.navbar-inverse {
-background-color: #054d63;
-border-color: #16101C;
+}
+img.iconochico{
+  width: 15px; height: 15px;
+  display:block;
 }
 
-/*=======================================
-    HEADER STYLES
-==================================================*/
-
-.head-main {
-   font-size: 70px !important;
-font-weight: 900!important;
- color: #E6E6E6;
-}
-.head-sub-main {
-color: #E6E6E6;
-font-size: 40px !important;
-font-weight:600!important;
-font-family: sans-serif;
-padding:5px 20px 30px 20px;
-text-shadow: -2px 2px 7px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
--webkit-text-fill-color: #E6E6E6;
--webkit-text-stroke: 2px black;
-}
 
 img.perfil{
   width: 50px; height: 50px;
@@ -115,109 +114,73 @@ img.perfil{
 }
 
 img.icono{
-  width: 25px; height: 25px;
+  width: 30px; height: 30px;
   display:block;
+
 }
 
-.form-group .txt-busqueda {
-    
-    padding:5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+img.fotoperfil {
+    width: 150px; height: 150px;
+    display:block;
+
 }
 
-A:link.menu {text-decoration:none;color: #ffffff;} 
 
 
-A:visited.menu {text-decoration:none;color: #ffffff;} 
 
 
-A:hover.menu {text-decoration:underline;color: #ffffff;} 
 
 
-#menu{ 
-    text-align: left; 
-    margin: 15px; 
-    width: auto; 
-} 
+/*=======================================
+    AGENDA
+==================================================*/
 
-#leftnav{ 
-    float:left; 
-    width: auto; 
-    text-align: center;
-}  
-#rightnav{ 
+#agenda{ 
     float: right;   
-    width: 250px; 
-} 
-#centernav{ 
-    margin: auto;
-    text-align: center; 
-    padding: 4 4 4 4px; 
-    width: 350px;
+    width: 21%; 
+    height: 500px;
+    overflow:auto;
+    color:#fff;
+
 } 
 
 
-#contenedor{ 
-    text-align: center; 
-    margin: 150px; 
-    width: auto; 
-} 
-#cuerpo{ 
-    margin: 10 0 10 0px; 
-} 
-#izqnav{ 
-    float:left; 
-    background-color: #D4D4D4;
-    width: auto; 
-    text-align: center;
-}  
-#dernav{ 
-    background-color: #D4D4D4;
-    float: right;   
-    width: 250px; 
-    border: 1px solid #ccc;
+hr{display:none;}
 
-} 
-#principal{ 
- 
-    margin: auto;
-    text-align: center; 
-    padding: 4 4 4 4px; 
-    width:550px;
-} 
-#txtpublicar{ 
-    background-color: #D4D4D4; 
-    margin: 10px;
-    text-align: left; 
-    padding: 4 4 4 4px; 
-    width: 500px;
-    border: 1px solid #ccc;
 
-} 
-#publicacion{ 
-    background-color: #D4D4D4; 
-    margin: 10px;
-    text-align: center; 
-    padding: 4 4 4 4px; 
-    width: 500px;
-    border: 1px solid #ccc;
-    
-} 
-#publicador{
-    background-color: #D4D4D4; 
-    }
+ul.agenda li {
+  background-color: #2D4768;
+  padding: 3%;
+}
+ul.agenda li a:link, ul.agenda li a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+ul.agenda li:hover {
+  background-color: #008148;
+}
 
+#recordatorio {
+  margin: 10%; 
+  padding: 3%;
+  text-align: left;
+}
+
+
+#tareas {
+  margin: 5%;
+  padding: 3%;
+}
 
 
 /*=======================================
     FOOTER STYLES
 ==================================================*/
 
-
 #footer {
     background-color: #054d63;
     color:#fff;
+    margin-top: 1%;
     padding: 10px 50px 10px 50px;
     text-align:right;
 }
