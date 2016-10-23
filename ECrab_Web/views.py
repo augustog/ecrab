@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+import datetime
 
 # Create your views here.
 #def login(request):
@@ -28,7 +30,10 @@ from django.shortcuts import render
 def main(request):
     ...."""
 
-def login (request):
+def home (request):
 
-	return render(request, 'weblog.html')
-
+    now = datetime.datetime.now()
+    t = template ('webhome.html')
+    c = context ({"fecha": "now"})
+    t.render(c)
+    return render(request)
