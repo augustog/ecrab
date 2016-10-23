@@ -53,6 +53,7 @@ ul.menusec li:hover {
 .colorBackgroundPublicar{
   background-color: #ccc
 }
+
 /*---------------------------------------------------
   HEADER MENUTOP
 -----------------------------------------------------*/
@@ -124,6 +125,104 @@ img.fotoperfil {
     display:block;
 
 }
+
+/*=======================================
+    CUERPO
+==================================================*/
+
+#cuerpo{ 
+
+    float: left;   
+    width: 110%; 
+    height: 800px;
+    overflow:auto;
+    color:#fff;
+    margin-top: 1%;
+} 
+
+#txtpublicar{
+
+    background-color: #D4D4D4; 
+    margin: 10px;
+    text-align: left; 
+    padding: 4 4 4 4px; 
+    border: 1px solid #ccc;
+
+}
+
+hr{display:none;}
+
+ul.txtpublicar {
+  list-style: none;
+  text-align: center;
+}
+
+ul.txtpublicar li {
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
+}
+
+ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+#col2-3{
+  float: left;   
+    width: 66.6%; 
+    height: auto
+    color:#fff;
+}
+#colizq1-2{
+  float: left;   
+    width: 50%; 
+    height: auto
+    color:#fff;
+}
+#colder1-2{
+  float: right;   
+    width: 50%; 
+    height: auto
+    color:#fff;
+}
+#colder1-3{
+  float: right;   
+    width: 33.3%; 
+    height: auto
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
