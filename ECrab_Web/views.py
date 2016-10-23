@@ -1,28 +1,38 @@
+#!/usr/bin/python
+          # -*- coding: utf-8 -*-
+
+#Agreguè encoding utf-8 para que entienda los caracteres con acento, nada crucial
+
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader #Estabas llamando a la funciòn "template" (que no existe) y no la encontraba porque nunca la definiste o importaste, acá te hice los cambios para que ande
 import datetime
+
 
 # Create your views here.
 
 def home (request):
 
     now= datetime.datetime.now()
-    t = template ('C:/Users/Ariel/ECrab/ECrab_Web/templates/webhome.html')
-    c = context ({"fecha":'now'})
-    html = t.render(c)
-   
+    template = loader.get_template('webhome.html')
+    #c = context ({"fecha":'now'}) #Si pones una serie de caracteres entre comillas python lo lee como un string literal, y pasa eso. Si pones 'fecha':'now' la pag siempre va a leer 'hoy es now', y no funca. Lo que querès es pasarle la variable que definiste arriba, por eso haces asi:
+    context = {
+	    'fecha': now,
+	} #el context ES un diccionario, no necesitàs construirlo llamando a una funcion (igualmente, esa funcion no existe porque no la definiste ni importaste)
+    html = template.render(context, request)
+    #para hacer el código más entendible, usá nombres representativos de lo que es cada cosa. Osea, 'template' en lugar de 't'.
     return HttpResponse(html)
 
-#def login(request):
-#   pass 
-#
-#def listas (request):
-#   pass
-#
-#def perfil(request):
-#   pass
+def login(request):
+   pass 
 
-"""def login_user(request):
+def listas (request):
+   pass
+
+def perfil(request):
+   pass
+
+def login_user(request):
     logout(request)
     username = password = ''
     if request.POST:
@@ -35,7 +45,7 @@ def home (request):
                 login(request, user)
                 return HttpResponseRedirect('/main/')
     return render_to_response('login.html', context_instance=RequestContext(request))
-
+"""
 @login_required(login_url='/login/')
 def main(request):
     ...."""
