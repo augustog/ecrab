@@ -7,7 +7,7 @@ import datetime
 def home (request):
 
     now= datetime.datetime.now()
-    t = template ("<body><p>Hoy es {{fecha}}</p></body>")
+    t = template ('C:/Users/Ariel/ECrab/ECrab_Web/templates/webhome.html')
     c = context ({"fecha":'now'})
     html = t.render(c)
    
