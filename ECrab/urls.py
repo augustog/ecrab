@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from ECrab_Web.views import home, login_user
+from ECrab_Web.views import home, login
 
 urlpatterns = [
     url(r'^home/$', home),
-    url(r'^login/$', login,
-
     ]
