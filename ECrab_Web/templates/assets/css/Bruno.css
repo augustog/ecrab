@@ -16,11 +16,11 @@ p {
 }
 
 /*---------------------------------------------------
-  COLORES
+	COLORES
 -----------------------------------------------------*/
 
 .colorBackgroundBody{
-  background-color: #004E2C;
+	background-color: #113540;
 }
 
 /*color Menu Hover*/
@@ -28,54 +28,39 @@ nav ul li:hover {
   background: #3ead47;
 }
 /*color Menusec*/
-ul.menusec li  {
-  background-color: #2D4768;
+ul.menusec li {
+	background-color: #184C5C;
 }
-
 /*color Menusec Hover*/
 ul.menusec li:hover {
-  background-color: #008148;
+	background-color: #008148;
 }
-.menusec{
-  background-color: #333;
-  color: #fff;
+.Portada{
+  background-image: url("C:/Users/Bruno/ECrab/ECrab_Web/templates/assets/img/firewatch_wallpaper_HD_background_download_desktop3.jpg");
+  background-size: 100%;
 }
-
 .colorBackgroundAgenda{
-    background-color: #2D6F68;
+    background-color: #21677D;
+}
+ul.agenda li {
+  background-color: #184C5C;
+  padding: 3%;
 }
 .colorRecordatorio{
-  background-color: #2D4768;
+	background-color: #184C5C;
 }
 .colorTareas{
-  background-color: #008148;
+	background-color: #25618A;
 }
-/*color agenda Hover*/
-ul.agenda li:hover {
-  background-color: #008148;
+.colorBackgroundCuerpo{
+	background-color: #333;
 }
-
 .colorBackgroundPublicar{
   background: rgba(0,0,0,0.3);
 }
-ul.agregar li {
-  background: rgba(0,0,0,0.3)
-}
-ul.agregar li:hover {
-  background: rgba(59,53,45,0.7)
-}
-.colorBackgroundPublicacion{
- background: rgba(0,0,0,0.3) 
-}
-.colorBackgroundPublicado{
-  background: rgba(0,0,0,0.3); 
-}
-.colorBackgroundComentar{
-background: rgba(0,0,0,0.3); 
-}
 
 /*---------------------------------------------------
-  HEADER MENUTOP
+	HEADER MENUTOP
 -----------------------------------------------------*/
 
 header {
@@ -121,13 +106,16 @@ nav ul li a {
   margin: auto;
   overflow:hidden;
 }
-
-}
 img.iconochico{
   width: 15px; height: 15px;
   display:block;
 }
 
+img.icono{
+  width: 30px; height: 30px;
+  display:block;
+
+}
 
 img.perfil{
   width: 90px; height: 90px;
@@ -146,37 +134,67 @@ img.perfilchico{
   display:block;
 }
 
-img.icono{
-  width: 30px; height: 30px;
-  display:block;
-
-}
 
 img.fotoperfil {
-    width: 150px; height: 150px;
-    display:block;
-
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  display:block;
 }
 
 /*=======================================
-    CUERPO
+    SECTION PRINCIPAL
+==================================================*/
+
+#contenedor{ 
+    text-align: center; 
+
+    width: auto; 
+} 
+
+#principal{
+    float:left; 
+    text-align: center;
+    width: 65%; 
+   
+} 
+
+#portada{
+    float:left; 
+    text-align: center;
+    width: 100%; 
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}  
+
+#perfil a:link, a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-size: 200%
+}
+
+#perfil{ 
+  margin: auto;
+  text-align: center; 
+  width:300px;
+  color: #fff;
+} 
+
+/*=======================================
+  NAV MENUSEC
 ==================================================*/
 
 
-#contenedor{
-  float: left;
-  width: 75%;
-}
-
 #menusec{
-    float: left;   
-    width: 20%; 
-    height: auto;
-    margin-right: 2%;
-    margin-left: 2%; 
-
+  width: 110%;
+  margin-top: 36.3%;
+    
 }
 
+hr{display:none;}
 
 ul.menusec {
   list-style: none;
@@ -184,22 +202,54 @@ ul.menusec {
 }
 
 ul.menusec li {
-  width: 100%;
-  padding-top:5%;
-  padding-bottom: 5%;
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
 }
-ul.menusec li a{
-  color: #fff;
+
+ul.menusec li a:link, ul.menusec li a:visited {
   text-decoration: none;
+  color:#fff;
 }
 
-#principal{  /*-- Columna Central --*/
-    float: right;   
-    width: 75%; 
-    height: auto;
-    padding-bottom: 1%;
+/*=======================================
+    CUERPO
+==================================================*/
+
+#cuerpo{ 
+
+    float: left;   
+    width: 110%; 
+    color:#fff;
+    margin-top: 1%;
+} 
+
+#txtpublicar{
+    margin: 10px;
+    text-align: left; 
+    padding: 4 4 4 4px; 
 
 
+}
+
+hr{display:none;}
+
+ul.txtpublicar {
+  list-style: none;
+  text-align: center;
+}
+
+ul.txtpublicar li {
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
+}
+
+ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
+  text-decoration: none;
+  color:#fff;
 }
 
 /*-- Botones agregar --*/
@@ -210,7 +260,7 @@ ul.agregar {
 }
 
 ul.agregar li {
-  width: 50%;
+  width: 33.3%;
   padding-top:1.25%;
   padding-bottom: 1.25%;
   float:left;
@@ -276,119 +326,6 @@ ul.agregar li a:link, ul.agregar li a:visited {
 }
 
 
-/*=======================================
-    PUBLICACION
-==================================================*/
-
-ul.publicacion {
-  list-style: none;
-  text-align: center;
-}
-
-ul.publicacion li {
-  width: 50%;
-
-
-}
-
-ul.publicacion li a:link, ul.publicacion li a:visited {
-  text-decoration: none;
-  color:#fff;
-}
-
-#publicacion{
-  float: right;   
-  width: 100%; 
-  height: auto;
-  margin-top: 2%;
-
-}
-
-#publicado{
-  float: right;
-  width: 81%; 
-  padding: 2%;
-  color: #fff;
-  text-align: left;
-}
-
-ul.interez{
-  list-style: none;
-  text-align: center;
-}
-
-ul.interez li {
-  width: 25%;
-  padding-top:1.25%;
-  padding-bottom: 1.25%;
-  float:right;
-}
-
-ul.interez li a:link, ul.interez li a:visited {
-  text-decoration: none;
-  color:#fff;
-}
-
-#acciones{
-  margin-bottom: 2%;
-}
-
-#comentar{
-  float: right;   
-  width: 94%; 
-  height: auto;
-  margin-top: 2%;
-  margin-bottom: 4%;
-  padding: 3%;
-}
-
-ul.coment{
-  list-style: none;
-  text-align: center;
-}
-
-ul.coment li {
-  width: 25%;
-  padding-top:1.25%;
-  padding-bottom: 1.25%;
-  float:left;
-}
-
-ul.coment li a:link, ul.coment li a:visited {
-  text-decoration: none;
-  color:#fff;
-}
-
-.txtcoment{
-  width: 100%;
-  height:100%;
-}
-
-
-.btncoment{
-  float: right;
-  width: 25%;
-  height:100%;
-  color: #fff;
-  background-color: #333;
-  border: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -435,12 +372,13 @@ ul.agenda li a:link, ul.agenda li a:visited {
 }
 
 
+
 /*=======================================
     FOOTER STYLES
 ==================================================*/
 
 #footer {
-    background-color: #054d63;
+    background: rgba(0,0,0,0.3);
     color:#fff;
     margin-top: 1%;
     padding: 10px 50px 10px 50px;

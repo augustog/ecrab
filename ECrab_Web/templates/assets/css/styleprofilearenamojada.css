@@ -20,11 +20,7 @@ p {
 -----------------------------------------------------*/
 
 .colorBackgroundBody{
-  background-color: #004E2C;
-}
-
-.colorPortada{
-  background: rgba(0,0,0,0.3);
+	background-color: #AD9851;
 }
 
 /*color Menu Hover*/
@@ -32,34 +28,31 @@ nav ul li:hover {
   background: #3ead47;
 }
 /*color Menusec*/
-ul.menusec li  {
-  background-color: #2D4768;
+ul.menusec li {
+	background-color: #574C28;
 }
-
 /*color Menusec Hover*/
 ul.menusec li:hover {
-  background-color: #008148;
+	background-color: #008148;
 }
-.menusec{
-  background-color: #333;
-  color: #fff;
+.colorPortada{
+    background-color: #7F703C;
 }
-
 .colorBackgroundAgenda{
-    background-color: #2D6F68;
+    background-color: #7F703C;
+}
+ul.agenda li {
+  background-color: #63572E;
+  padding: 3%;
 }
 .colorRecordatorio{
-  background-color: #2D4768;
+	background-color: #574C28;
 }
 .colorTareas{
-  background-color: #008148;
-}
-/*color agenda Hover*/
-ul.agenda li:hover {
-  background-color: #008148;
+	background-color: #A18D4B;
 }
 .colorBackgroundCuerpo{
-	background-color: #513591;
+	background-color: #333;
 }
 .colorBackgroundPublicar{
   background: rgba(0,0,0,0.3);
@@ -119,37 +112,22 @@ img.iconochico{
   display:block;
 }
 
+
+img.perfil{
+  width: 50px; height: 50px;
+  display:block;
+}
+
 img.icono{
   width: 30px; height: 30px;
   display:block;
 
 }
 
-img.perfil{
-  width: 90px; height: 90px;
-  border-radius: 45px;
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  display:block;
-}
-
-img.perfilchico{
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  display:block;
-}
-
-
 img.fotoperfil {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  display:block;
+    width: 150px; height: 150px;
+    display:block;
+
 }
 
 /*=======================================
@@ -173,9 +151,7 @@ img.fotoperfil {
     float:left; 
     text-align: center;
     width: 100%; 
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
 
    
 }  
@@ -184,7 +160,8 @@ img.fotoperfil {
 
     margin: auto;
     text-align: center; 
-    width:300px;
+    padding: 4px; 
+    width:150px;
 } 
 
 /*=======================================
@@ -225,6 +202,8 @@ ul.menusec li a:link, ul.menusec li a:visited {
 
     float: left;   
     width: 110%; 
+    height: 800px;
+    overflow:auto;
     color:#fff;
     margin-top: 1%;
 } 
@@ -256,81 +235,30 @@ ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
 	color:#fff;
 }
 
-/*-- Botones agregar --*/
-
-ul.agregar {
-  list-style: none;
-  text-align: center;
+#col2-3{
+	float: left;   
+    width: 66.6%; 
+    height: auto
+    color:#fff;
 }
-
-ul.agregar li {
-  width: 33.3%;
-  padding-top:1.25%;
-  padding-bottom: 1.25%;
-  float:left;
+#colizq1-2{
+	float: left;   
+    width: 50%; 
+    height: auto
+    color:#fff;
 }
-
-ul.agregar li a:link, ul.agregar li a:visited {
-  text-decoration: none;
-  color:#fff;
+#colder1-2{
+	float: right;   
+    width: 50%; 
+    height: auto
+    color:#fff;
 }
-
-/*=======================================
-    SECCION PUBLICAR
-==================================================*/
-
-#publicar{
-  float: right;   
-  width: 100%; 
-  height: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+#colder1-3{
+	float: right;   
+    width: 33.3%; 
+    height: auto
+    color:#fff;
 }
-
-#publicador{
-  padding-top: 3%;
-  padding-bottom: 3%;
-  float: left;
-  margin-left: 3%;
-  width: auto;
-  display:block;
-}
-
-#txtpublicar{
-  width: 79%;
-  height: auto;
-  padding-top: 3%;
-  float: left;
-  margin-left: 3%;
-  display:block;
-}
-
-.txtpublicar{
-  width: 100%;
-  height:100%;
-}
-
-#btnpublicar{
-  width: 79%; 
-  height: 22.5px;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  float: left;
-  margin-left: 3%;
-  display:block;
-}
-
-.btnpublicar{
-  float: right;
-  width: 25%;
-  height:100%;
-  color: #fff;
-  background-color: #333;
-  border: none;
-}
-
-
-
 
 
 
@@ -345,7 +273,6 @@ ul.agregar li a:link, ul.agregar li a:visited {
     height: 500px;
     overflow:auto;
     color:#fff;
-    margin-right: 2%;
 
 } 
 
@@ -353,28 +280,26 @@ ul.agregar li a:link, ul.agregar li a:visited {
 hr{display:none;}
 
 
-ul.agenda li {
-  background-color: #2D4768;
-  padding: 3%;
-}
-ul.agenda li a:link, ul.agenda li a:visited {
-  text-decoration: none;
-  color:#fff;
-}
 
+ul.agenda li a:link, ul.agenda li a:visited {
+	text-decoration: none;
+	color:#fff;
+}
+ul.agenda li:hover {
+	background-color: #008148;
+}
 
 #recordatorio {
-  margin: 5%; 
-  padding: 3%;
-  text-align: left;
+	margin: 10%; 
+	padding: 3%;
+	text-align: left;
 }
 
 
 #tareas {
-  margin: 5%;
-  padding: 3%;
+	margin: 5%;
+	padding: 3%;
 }
-
 
 
 /*=======================================
