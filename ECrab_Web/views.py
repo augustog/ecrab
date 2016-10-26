@@ -16,8 +16,9 @@ def home (request):
     now= datetime.datetime.now()
     template = loader.get_template('webhome.html')
     #c = context ({"fecha":'now'}) #Si pones una serie de caracteres entre comillas python lo lee como un string literal, y pasa eso. Si pones 'fecha':'now' la pag siempre va a leer 'hoy es now', y no funca. Lo que querès es pasarle la variable que definiste arriba, por eso haces asi:
-    
-    context = {
+
+    try:
+        context = {
         'fecha': now,
         #'rec1': recordatorio1, 
         #'rec2': recordatorio2,
@@ -26,10 +27,13 @@ def home (request):
         #'rec5': recordatorio5,
         #'rec6': recordatorio6,
         #'rec7': recordatorio7,
-	} #el context ES un diccionario, no necesitàs construirlo llamando a una funcion (igualmente, esa funcion no existe porque no la definiste ni importaste)
-    html = template.render(context, request)
-    #para hacer el código más entendible, usá nombres representativos de lo que es cada cosa. Osea, 'template' en lugar de 't'.
-    return HttpResponse(html)
+        } #el context ES un diccionario, no necesitàs construirlo llamando a una funcion (igualmente, esa funcion no existe porque no la definiste ni importaste)
+        html = template.render(context, request)
+        #para hacer el código más entendible, usá nombres representativos de lo que es cada cosa. Osea, 'template' en lugar de 't'.
+        return HttpResponse(html)
+    
+    except Exception as e:
+       return render("<body><p>Error 404</p></body>")
 
 def login(request):
 
