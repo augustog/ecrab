@@ -8,3 +8,6 @@ class Usuario(models.Model):
 	lastname = models.TextField(max_length=400)
 	username = models.TextField(max_length=400) 
 	password = models.TextField(max_length=300)
+
+
+	
