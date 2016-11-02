@@ -1,0 +1,394 @@
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    text-align: center; 
+}
+ 
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+  margin-bottom: 5px;
+}
+
+/*---------------------------------------------------
+	COLORES
+-----------------------------------------------------*/
+
+.colorBackgroundBody{
+  background-color: #42147f;
+}
+
+.colorPortada{
+  background-image: url("C:/Users/Bruno/ECrab/ECrab_Web/templates/assets/img/WhatsApp Image 2016-10-26 at 11.12.08.jpeg");
+  background-size: 100%;
+}
+
+/*color Menu Hover*/
+nav ul li:hover {
+  background: #3ead47;
+}
+/*color Menusec*/
+ul.menusec li  {
+  background-color: #2D4768;
+}
+
+/*color Menusec Hover*/
+ul.menusec li:hover {
+  background-color: #008148;
+}
+.menusec{
+  color: #fff;
+}
+
+.colorBackgroundAgenda{
+    background-color: #21677D;
+}
+ul.agenda li {
+  background-color: #184C5C;
+  padding: 3%;
+}
+.colorRecordatorio{
+  background-color: #184C5C;
+}
+
+.colorTareas{
+  background-color: #25618A;
+}
+.colorTareaCompartida{
+  background-color: #6d3faa;
+}
+.colorBackgroundCuerpo{
+  background-color: #333;
+}
+.colorBackgroundPublicar{
+  background: rgba(0,0,0,0.3);
+}
+/*---------------------------------------------------
+  HEADER MENUTOP
+-----------------------------------------------------*/
+
+header {
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.menuizq{
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+.menuder{
+  float: right; /* Desplazamos el nav hacia la derecha */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+
+
+.contenido {
+  padding-top: 80px;
+}
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+  overflow:hidden;
+}
+img.iconochico{
+  width: 15px; height: 15px;
+  display:block;
+}
+
+img.icono{
+  width: 30px; height: 30px;
+  display:block;
+
+}
+
+img.perfil{
+  width: 90px; height: 90px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  display:block;
+}
+
+img.perfilchico{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  display:block;
+}
+
+
+img.fotoperfil {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  display:block;
+}
+
+/*=======================================
+    SECTION PRINCIPAL
+==================================================*/
+
+#contenedor{ 
+    text-align: center; 
+
+    width: auto; 
+} 
+
+#principal{
+    float:left; 
+    text-align: center;
+    width: 65%; 
+   
+} 
+
+#portada{
+    float:left; 
+    text-align: center;
+    width: 100%; 
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}  
+
+#perfil a:link, a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-size: 200%
+}
+
+#perfil{ 
+  margin: auto;
+  text-align: center; 
+  width:300px;
+  color: #fff;
+} 
+
+/*=======================================
+  NAV MENUSEC
+==================================================*/
+
+
+#menusec{
+  width: 110%;
+  margin-top: 36.3%;
+    
+}
+
+hr{display:none;}
+
+ul.menusec {
+  list-style: none;
+  text-align: center;
+}
+
+ul.menusec li {
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
+}
+
+ul.menusec li a:link, ul.menusec li a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+/*=======================================
+    CUERPO
+==================================================*/
+
+#cuerpo{ 
+
+    float: left;   
+    width: 110%; 
+    color:#fff;
+    margin-top: 1%;
+} 
+
+#txtpublicar{
+    margin: 10px;
+    text-align: left; 
+    padding: 4 4 4 4px; 
+
+
+}
+
+hr{display:none;}
+
+ul.txtpublicar {
+  list-style: none;
+  text-align: center;
+}
+
+ul.txtpublicar li {
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
+}
+
+ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+/*-- Botones agregar --*/
+
+ul.agregar {
+  list-style: none;
+  text-align: center;
+}
+
+ul.agregar li {
+  width: 33.3%;
+  padding-top:1.25%;
+  float:left;
+}
+
+ul.agregar li a:link, ul.agregar li a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+/*=======================================
+    SECCION PUBLICAR
+==================================================*/
+
+#publicar{
+  float: right;   
+  width: 100%; 
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#publicador{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  float: left;
+  margin-left: 3%;
+  width: auto;
+  display:block;
+}
+
+#txtpublicar{
+  width: 79%;
+  height: auto;
+  padding-top: 3%;
+  float: left;
+  margin-left: 3%;
+  display:block;
+}
+
+.txtpublicar{
+  width: 100%;
+  height:100%;
+}
+
+#btnpublicar{
+  width: 79%; 
+  height: 22.5px;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  float: left;
+  margin-left: 3%;
+  display:block;
+}
+
+.btnpublicar{
+  float: right;
+  width: 25%;
+  height:100%;
+  color: #fff;
+  background-color: #333;
+  border: none;
+}
+
+
+
+
+
+
+
+/*=======================================
+    AGENDA
+==================================================*/
+
+#agenda{ 
+    float: right;   
+    width: 21%; 
+    height: 500px;
+    overflow:auto;
+    color:#fff;
+    margin-right: 2%;
+
+} 
+
+
+hr{display:none;}
+
+
+ul.agenda li {
+  background-color: #2D4768;
+  padding: 3%;
+}
+ul.agenda li a:link, ul.agenda li a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+
+#recordatorio {
+  margin: 5%; 
+  padding: 3%;
+  text-align: left;
+}
+
+
+#tareas {
+  margin: 5%;
+  padding: 3%;
+}
+
+
+
+/*=======================================
+    FOOTER STYLES
+==================================================*/
+
+#footer {
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    margin-top: 1%;
+    padding: 10px 50px 10px 50px;
+    text-align:right;
+}
