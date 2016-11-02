@@ -20,7 +20,12 @@ p {
 -----------------------------------------------------*/
 
 .colorBackgroundBody{
-	background-color: #113540;
+  background-color: #BF6333;
+}
+
+.colorPortada{
+  background-image: url("C:/Users/Bruno/ECrab/ECrab_Web/templates/assets/img/beach-rugby.png");
+  background-size: 100%;
 }
 
 /*color Menu Hover*/
@@ -28,17 +33,18 @@ nav ul li:hover {
   background: #3ead47;
 }
 /*color Menusec*/
-ul.menusec li {
-	background-color: #184C5C;
+ul.menusec li  {
+  background-color: #2D4768;
 }
+
 /*color Menusec Hover*/
 ul.menusec li:hover {
-	background-color: #008148;
+  background-color: #008148;
 }
-.Portada{
-  background-image: url("C:/Users/Bruno/ECrab/ECrab_Web/templates/assets/img/firewatch_wallpaper_HD_background_download_desktop3.jpg");
-  background-size: 100%;
+.menusec{
+  color: #fff;
 }
+
 .colorBackgroundAgenda{
     background-color: #21677D;
 }
@@ -47,20 +53,23 @@ ul.agenda li {
   padding: 3%;
 }
 .colorRecordatorio{
-	background-color: #184C5C;
+  background-color: #184C5C;
 }
+
 .colorTareas{
-	background-color: #25618A;
+  background-color: #25618A;
+}
+.colorTareaCompartida{
+  background-color: #E5773D;
 }
 .colorBackgroundCuerpo{
-	background-color: #333;
+  background-color: #333;
 }
 .colorBackgroundPublicar{
   background: rgba(0,0,0,0.3);
 }
-
 /*---------------------------------------------------
-	HEADER MENUTOP
+  HEADER MENUTOP
 -----------------------------------------------------*/
 
 header {
@@ -293,7 +302,7 @@ ul.agregar li a:link, ul.agregar li a:visited {
 
 #txtpublicar{
   width: 79%;
-  height: 50px;
+  height: auto;
   padding-top: 3%;
   float: left;
   margin-left: 3%;

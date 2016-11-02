@@ -20,7 +20,7 @@ p {
 -----------------------------------------------------*/
 
 .colorBackgroundBody{
-  background-color: #004E2C;
+  background-color: #2F3540;
 }
 
 /*color Menu Hover*/
@@ -29,7 +29,7 @@ nav ul li:hover {
 }
 /*color Menusec*/
 ul.menusec li  {
-  background-color: #2D4768;
+  background-color: #666A73;
 }
 
 /*color Menusec Hover*/
@@ -40,21 +40,19 @@ ul.menusec li:hover {
   background-color: #333;
   color: #fff;
 }
-
 .colorBackgroundAgenda{
-    background-color: #2D6F68;
+    background-color: #21677D;
+}
+ul.agenda li {
+  background-color: #184C5C;
+  padding: 3%;
 }
 .colorRecordatorio{
-  background-color: #2D4768;
+  background-color: #184C5C;
 }
 .colorTareas{
-  background-color: #008148;
+  background-color: #25618A;
 }
-/*color agenda Hover*/
-ul.agenda li:hover {
-  background-color: #008148;
-}
-
 .colorBackgroundPublicar{
   background: rgba(0,0,0,0.3);
 }
@@ -147,16 +145,18 @@ img.perfilchico{
 }
 
 img.icono{
-  width: 30px; height: 30px;
+  width: 50px; height: 50px;
   display:block;
 
 }
 
-img.fotoperfil {
-    width: 150px; height: 150px;
-    display:block;
-
+img.publicacion{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%; height: 100%;
+  display:block;
 }
+
 
 /*=======================================
     CUERPO
@@ -210,7 +210,7 @@ ul.agregar {
 }
 
 ul.agregar li {
-  width: 50%;
+  width: 33.3%;
   padding-top:1.25%;
   padding-bottom: 1.25%;
   float:left;
@@ -243,8 +243,8 @@ ul.agregar li a:link, ul.agregar li a:visited {
 }
 
 #txtpublicar{
-  width: 79%;
-  height: auto;
+  width: 78.5%;
+  height: 50px;
   padding-top: 3%;
   float: left;
   margin-left: 3%;
