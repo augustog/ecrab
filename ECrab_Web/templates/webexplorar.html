@@ -5,6 +5,8 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="es">
 <!--<![endif]-->
+{%load staticfiles%}
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,11 +18,10 @@
     <title>Explorar | ECrab</title>
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLE CSS -->
     <link href="assets/css/font.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/styleexplorar.css" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'css/styleexplorar.css' %}">
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
