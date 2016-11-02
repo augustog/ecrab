@@ -18,9 +18,8 @@ p {
 /*---------------------------------------------------
 	COLORES
 -----------------------------------------------------*/
-
 .colorBackgroundBody{
-	background-color: #AD9851;
+  background-color: #216E45;
 }
 
 /*color Menu Hover*/
@@ -29,37 +28,41 @@ nav ul li:hover {
 }
 /*color Menusec*/
 ul.menusec li {
-	background-color: #574C28;
+  background-color: #184C5C;
 }
 /*color Menusec Hover*/
 ul.menusec li:hover {
-	background-color: #008148;
+  background-color: #008148;
 }
-.colorPortada{
-    background-color: #7F703C;
+.Portada{
+  background-image: url("C:/Users/Bruno/ECrab/ECrab_Web/templates/assets/img/uncharted_3___sand_escape_by_santi_yo-d34lfo5.jpg");
+  background-size: 100%;
 }
 .colorBackgroundAgenda{
-    background-color: #7F703C;
+    background-color: #21677D;
 }
 ul.agenda li {
-  background-color: #63572E;
+  background-color: #184C5C;
   padding: 3%;
 }
 .colorRecordatorio{
-	background-color: #574C28;
+  background-color: #184C5C;
 }
 .colorTareas{
-	background-color: #A18D4B;
+  background-color: #25618A;
+}
+.colorTareaCompartida{
+  background-color: #088A4B;
 }
 .colorBackgroundCuerpo{
-	background-color: #333;
+  background-color: #333;
 }
 .colorBackgroundPublicar{
   background: rgba(0,0,0,0.3);
 }
 
 /*---------------------------------------------------
-	HEADER MENUTOP
+  HEADER MENUTOP
 -----------------------------------------------------*/
 
 header {
@@ -105,16 +108,8 @@ nav ul li a {
   margin: auto;
   overflow:hidden;
 }
-
-}
 img.iconochico{
   width: 15px; height: 15px;
-  display:block;
-}
-
-
-img.perfil{
-  width: 50px; height: 50px;
   display:block;
 }
 
@@ -124,10 +119,31 @@ img.icono{
 
 }
 
-img.fotoperfil {
-    width: 150px; height: 150px;
-    display:block;
+img.perfil{
+  width: 90px; height: 90px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  display:block;
+}
 
+img.perfilchico{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  display:block;
+}
+
+
+img.fotoperfil {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  display:block;
 }
 
 /*=======================================
@@ -151,47 +167,52 @@ img.fotoperfil {
     float:left; 
     text-align: center;
     width: 100%; 
-    padding: 5%;
-
-   
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
 }  
 
-#perfil{ 
+#perfil a:link, a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-size: 200%
+}
 
-    margin: auto;
-    text-align: center; 
-    padding: 4px; 
-    width:150px;
+#perfil{ 
+  margin: auto;
+  text-align: center; 
+  width:300px;
+  color: #fff;
 } 
 
 /*=======================================
-	NAV MENUSEC
+  NAV MENUSEC
 ==================================================*/
 
 
 #menusec{
-	width: 110%;
-	margin-top: 36.3%;
+  width: 110%;
+  margin-top: 36.3%;
     
 }
 
 hr{display:none;}
 
 ul.menusec {
-	list-style: none;
-	text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 ul.menusec li {
-	width: 25%;
-	padding-top:1.25%;
-	padding-bottom: 1.25%;
-	float:left;
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
 }
 
 ul.menusec li a:link, ul.menusec li a:visited {
-	text-decoration: none;
-	color:#fff;
+  text-decoration: none;
+  color:#fff;
 }
 
 /*=======================================
@@ -202,8 +223,6 @@ ul.menusec li a:link, ul.menusec li a:visited {
 
     float: left;   
     width: 110%; 
-    height: 800px;
-    overflow:auto;
     color:#fff;
     margin-top: 1%;
 } 
@@ -219,46 +238,96 @@ ul.menusec li a:link, ul.menusec li a:visited {
 hr{display:none;}
 
 ul.txtpublicar {
-	list-style: none;
-	text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 ul.txtpublicar li {
-	width: 25%;
-	padding-top:1.25%;
-	padding-bottom: 1.25%;
-	float:left;
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
 }
 
 ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
-	text-decoration: none;
-	color:#fff;
+  text-decoration: none;
+  color:#fff;
 }
 
-#col2-3{
-	float: left;   
-    width: 66.6%; 
-    height: auto
-    color:#fff;
+/*-- Botones agregar --*/
+
+ul.agregar {
+  list-style: none;
+  text-align: center;
 }
-#colizq1-2{
-	float: left;   
-    width: 50%; 
-    height: auto
-    color:#fff;
+
+ul.agregar li {
+  width: 33.3%;
+  padding-top:1.25%;
+  float:left;
 }
-#colder1-2{
-	float: right;   
-    width: 50%; 
-    height: auto
-    color:#fff;
+
+ul.agregar li a:link, ul.agregar li a:visited {
+  text-decoration: none;
+  color:#fff;
 }
-#colder1-3{
-	float: right;   
-    width: 33.3%; 
-    height: auto
-    color:#fff;
+
+/*=======================================
+    SECCION PUBLICAR
+==================================================*/
+
+#publicar{
+  float: right;   
+  width: 100%; 
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
+#publicador{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  float: left;
+  margin-left: 3%;
+  width: auto;
+  display:block;
+}
+
+#txtpublicar{
+  width: 79%;
+  height: auto;
+  padding-top: 3%;
+  float: left;
+  margin-left: 3%;
+  display:block;
+}
+
+.txtpublicar{
+  width: 100%;
+  height:100%;
+}
+
+#btnpublicar{
+  width: 79%; 
+  height: 22.5px;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  float: left;
+  margin-left: 3%;
+  display:block;
+}
+
+.btnpublicar{
+  float: right;
+  width: 25%;
+  height:100%;
+  color: #fff;
+  background-color: #333;
+  border: none;
+}
+
+
+
 
 
 
@@ -273,6 +342,7 @@ ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
     height: 500px;
     overflow:auto;
     color:#fff;
+    margin-right: 2%;
 
 } 
 
@@ -280,26 +350,28 @@ ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
 hr{display:none;}
 
 
-
+ul.agenda li {
+  background-color: #2D4768;
+  padding: 3%;
+}
 ul.agenda li a:link, ul.agenda li a:visited {
-	text-decoration: none;
-	color:#fff;
+  text-decoration: none;
+  color:#fff;
 }
-ul.agenda li:hover {
-	background-color: #008148;
-}
+
 
 #recordatorio {
-	margin: 10%; 
-	padding: 3%;
-	text-align: left;
+  margin: 5%; 
+  padding: 3%;
+  text-align: left;
 }
 
 
 #tareas {
-	margin: 5%;
-	padding: 3%;
+  margin: 5%;
+  padding: 3%;
 }
+
 
 
 /*=======================================

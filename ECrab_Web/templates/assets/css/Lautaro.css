@@ -20,11 +20,12 @@ p {
 -----------------------------------------------------*/
 
 .colorBackgroundBody{
-  background-color: #004E2C;
+  background-color: #B03B26;
 }
 
 .colorPortada{
-  background: rgba(0,0,0,0.3);
+  background-image: url("C:/Users/Bruno/ECrab/ECrab_Web/templates/assets/img/athletics-wallpaper-203973.jpg");
+  background-size: 100%;
 }
 
 /*color Menu Hover*/
@@ -41,32 +42,34 @@ ul.menusec li:hover {
   background-color: #008148;
 }
 .menusec{
-  background-color: #333;
   color: #fff;
 }
 
 .colorBackgroundAgenda{
-    background-color: #2D6F68;
+    background-color: #21677D;
+}
+ul.agenda li {
+  background-color: #184C5C;
+  padding: 3%;
 }
 .colorRecordatorio{
-  background-color: #2D4768;
+  background-color: #184C5C;
 }
+
 .colorTareas{
-  background-color: #008148;
+  background-color: #25618A;
 }
-/*color agenda Hover*/
-ul.agenda li:hover {
-  background-color: #008148;
+.colorTareaCompartida{
+  background-color: #EE3026;
 }
 .colorBackgroundCuerpo{
-	background-color: #513591;
+  background-color: #333;
 }
 .colorBackgroundPublicar{
   background: rgba(0,0,0,0.3);
 }
-
 /*---------------------------------------------------
-	HEADER MENUTOP
+  HEADER MENUTOP
 -----------------------------------------------------*/
 
 header {
@@ -111,8 +114,6 @@ nav ul li a {
   width: 95%;
   margin: auto;
   overflow:hidden;
-}
-
 }
 img.iconochico{
   width: 15px; height: 15px;
@@ -176,45 +177,49 @@ img.fotoperfil {
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
-
-   
 }  
 
-#perfil{ 
+#perfil a:link, a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-size: 200%
+}
 
-    margin: auto;
-    text-align: center; 
-    width:300px;
+#perfil{ 
+  margin: auto;
+  text-align: center; 
+  width:300px;
+  color: #fff;
 } 
 
 /*=======================================
-	NAV MENUSEC
+  NAV MENUSEC
 ==================================================*/
 
 
 #menusec{
-	width: 110%;
-	margin-top: 36.3%;
+  width: 110%;
+  margin-top: 36.3%;
     
 }
 
 hr{display:none;}
 
 ul.menusec {
-	list-style: none;
-	text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 ul.menusec li {
-	width: 25%;
-	padding-top:1.25%;
-	padding-bottom: 1.25%;
-	float:left;
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
 }
 
 ul.menusec li a:link, ul.menusec li a:visited {
-	text-decoration: none;
-	color:#fff;
+  text-decoration: none;
+  color:#fff;
 }
 
 /*=======================================
@@ -240,20 +245,20 @@ ul.menusec li a:link, ul.menusec li a:visited {
 hr{display:none;}
 
 ul.txtpublicar {
-	list-style: none;
-	text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 ul.txtpublicar li {
-	width: 25%;
-	padding-top:1.25%;
-	padding-bottom: 1.25%;
-	float:left;
+  width: 25%;
+  padding-top:1.25%;
+  padding-bottom: 1.25%;
+  float:left;
 }
 
 ul.txtpublicar li a:link, ul.txtpublicar li a:visited {
-	text-decoration: none;
-	color:#fff;
+  text-decoration: none;
+  color:#fff;
 }
 
 /*-- Botones agregar --*/
@@ -266,7 +271,6 @@ ul.agregar {
 ul.agregar li {
   width: 33.3%;
   padding-top:1.25%;
-  padding-bottom: 1.25%;
   float:left;
 }
 
