@@ -18,6 +18,6 @@ from django.contrib import admin
 from ECrab_Web.views import home, login, login_user
 
 urlpatterns = [
-    url(r'^login/$', login_user),
+    url(r'^login/$', login),
     url(r'^home/$', home),
     ]
