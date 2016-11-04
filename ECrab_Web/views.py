@@ -39,20 +39,17 @@ def login(request):
 
     template = loader.get_template('weblog.html')
     #context = {}
-    html = template.render(request)
-    return HttpResponse(html)
 
-def listas (request):
-   pass
+    try:
 
-def perfil(request):
-   pass
+        html = template.render(request)
+        return HttpResponse(html)
+
+    except Exception as e:
+        return render("<body><p>Error 404</p></body>")
 
 def login_user(request):
-    pass
-
-
-    """ logout(request)
+ logout(request)
     username = password =''
     if request.POST:
         username = request.POST['username']
@@ -63,9 +60,16 @@ def login_user(request):
             if user.is_active:
                 login(request, user)
                 return HttpResponseRedirect('/main/')
-    return render_to_response('weblog.html', context_instance=RequestContext(request))"""
-"""
+    return render_to_response('weblog.html', context_instance=RequestContext(request))
 @login_required(login_url='/login/')
-def main(request):
-    ...."""
 
+
+
+def main(request):
+   pass
+
+def listas (request):
+   pass
+
+def perfil(request):
+   pass
