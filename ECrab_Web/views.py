@@ -1,13 +1,15 @@
 #!/usr/bin/python
           # -*- coding: utf-8 -*-
 
-#Agreguè encoding utf-8 para que entienda los caracteres con acento, nada crucial
+# Imports here.
 
+from django.contrib.auth.models import Usuario
+from django.core.urlresolvers import reverse
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.template import loader #Estabas llamando a la funciòn "template" (que no existe) y no la encontraba porque nunca la definiste o importaste, acá te hice los cambios para que ande
+from django.template import loader
+from forms import SignUpForm 
 import datetime
-
 
 # Create your views here.
 
@@ -15,8 +17,7 @@ def home (request):
 
     now= datetime.datetime.now()
     template = loader.get_template('webhome.html')
-    #c = context ({"fecha":'now'}) #Si pones una serie de caracteres entre comillas python lo lee como un string literal, y pasa eso. Si pones 'fecha':'now' la pag siempre va a leer 'hoy es now', y no funca. Lo que querès es pasarle la variable que definiste arriba, por eso haces asi:
-
+    
     try:
         context = {
         'fecha': now,
@@ -27,9 +28,9 @@ def home (request):
         #'rec5': recordatorio5,
         #'rec6': recordatorio6,
         #'rec7': recordatorio7,
-        } #el context ES un diccionario, no necesitàs construirlo llamando a una funcion (igualmente, esa funcion no existe porque no la definiste ni importaste)
+        } 
         html = template.render(context, request)
-        #para hacer el código más entendible, usá nombres representativos de lo que es cada cosa. Osea, 'template' en lugar de 't'.
+       
         return HttpResponse(html)
     
     except Exception as e:
@@ -63,6 +64,36 @@ def login_user(request):
     return render_to_response('weblog.html', context_instance=RequestContext(request))
 @login_required(login_url='/login/')
 
+
+def signup(request):
+    if request.method == 'POST':  # If the form has been submitted...
+        form = SignUpForm(request.POST)  # A form bound to the POST data
+        if form.is_valid():  # All validation rules pass
+ 
+            # Process the data in form.cleaned_data
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password"]
+            name = form.cleaned_data["name"]
+            lastname = form.cleaned_data["lastname"]
+ 
+            # At this point, user is a User object that has already been saved
+            # to the database. You can continue to change its attributes
+            # if you want to change other fields.
+            user = User.objects.create_user(username, email, password)
+            user.first_name = first_name
+            user.last_name = last_name
+ 
+            # Save new user attributes
+            user.save()
+ 
+            return HttpResponseRedirect(reverse('main'))  # Redirect after POST
+    else:
+        form = SignUpForm()
+ 
+    data = {
+        'form': form,
+    }
+    return render_to_response('signup.html', data, context_instance=RequestContext(request))
 
 
 def main(request):
