@@ -37,7 +37,10 @@ def home (request):
 
 def login(request):
 
-    pass
+    template = loader.get_template('weblog.html')
+    #context = {}
+    html = template.render(request)
+    return HttpResponse(html)
 
 def listas (request):
    pass
