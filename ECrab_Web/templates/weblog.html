@@ -20,7 +20,7 @@
     <!-- BOOTSTRAP CORE STYLE CSS -->
     
     <!-- FONTAWESOME STYLE CSS -->
-    <link href="static/css/font.css" rel="stylesheet" />
+    <link href="{% static 'css/font.css' %}" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link rel="stylesheet" href="{% static 'css/stylelog.css' %}">
     <!-- GOOGLE FONT -->
@@ -87,18 +87,18 @@
                <div class="col-md-3 col-sm-3">
                    <div class=" ">
                        <h3>Iniciar sesion</h3>
-                        <form>
+                        <form action="/login_redirect/" method="post">
                        
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
                                     
-                                    <input type="text" class="form-control" size="15" maxlength="30" required="required" placeholder="Usuario">
+                                    <input id="username" type="text" class="form-control" size="15" maxlength="30" required="required" placeholder="Usuario">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
 				    
-                                    <input type="password" class="form-control" size="15" maxlength="30" required="required" placeholder="Contra">
+                                    <input id="password" type="password" class="form-control" size="15" maxlength="30" required="required" placeholder="Contra">
                                 </div>
                             </div>
                            

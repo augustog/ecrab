@@ -13,11 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
-from ECrab_Web.views import home, login, login_user
+from ECrab_Web import views
 
 urlpatterns = [
-    url(r'^login/$', login),
-    url(r'^home/$', home),
+	url(r'^$', views.landing),
+    url(r'^login/$', views.login), 
+	url(r'^login_redirect/$', views.login_redirect),
+    url(r'^home/$', views.home),
+	url(r'^admin', include(admin.urls)) #Check syntax
+#	url(r'^perfil/(?:<nombre_usuario>[a-z]*)$', views.perfil) #TODO: Implementar perfiles
     ]
