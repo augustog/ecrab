@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.contrib.auth import User
+from django.contrib.auth.models import User
 
 
 # Create your models here.
@@ -11,7 +11,7 @@ class Usuario(models.Model):
 	username = models.TextField(max_length=400) 
 	password = models.TextField(max_length=300)
 
-class Recordatorio (models.Model):
-    user = models.ForeignKey(User) #Check use of ForeignKey
-    date = models.DateField() #Check attributes
-	done = models.BooleanField() #Check
+#class Recordatorio (models.Model):
+    #user = models.ForeignKey(User) #Check use of ForeignKey
+    #date = models.DateField() #Check attributes
+	#done = models.BooleanField() #Check

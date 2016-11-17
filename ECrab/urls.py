@@ -22,6 +22,6 @@ urlpatterns = [
     url(r'^login/$', views.login), 
 	url(r'^login_redirect/$', views.login_redirect),
     url(r'^home/$', views.home),
-	url(r'^admin', include(admin.urls)) #Check syntax
+	url(r'^admin/', include(admin.site.urls)) #Check syntax
 #	url(r'^perfil/(?:<nombre_usuario>[a-z]*)$', views.perfil) #TODO: Implementar perfiles
     ]
