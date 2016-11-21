@@ -48,7 +48,7 @@ def login_redirect (request):
         login(request, user)
         HttpResponseRedirect('/home/')
     else: 
-        return HttpResponse("Error 301")
+        HttpResponseRedirect('/login/')
 		
 		
 		
