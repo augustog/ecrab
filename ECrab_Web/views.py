@@ -10,7 +10,7 @@ from django.http import HttpResponse
 from django.template import loader
 #from forms import SignUpForm 
 from django.contrib.auth import authenticate
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required 
 import datetime
 
 # Create your views here.
@@ -38,7 +38,6 @@ def login(request):
     html = template.render(request)
     return HttpResponse(html)
 
-	   
 def login_redirect (request):
     user = authenticate(
     	username=request.POST['username'],
