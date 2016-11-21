@@ -13,6 +13,11 @@ class ExtendedUser (models.Model):
 	user = models.ForeignKey(User)
 	#dato = models.XXField()
 
+#class Recordatorio (models.Model):
+    #user = models.ForeignKey(User) #Check use of ForeignKey
+    #date = models.DateField() #Check attributes
+	#done = models.BooleanField() #Check
+
 class Recordatorio (models.Model):
     user = models.ForeignKey(User) #Check use of ForeignKey
     date = models.DateField() #Check attributes
