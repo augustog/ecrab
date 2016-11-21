@@ -19,7 +19,7 @@ import datetime
 
 def landing(request):
     return HttpResponse('Landing page. <a href="/home/">Log in </a>') ##TODO: Implement landing page
-			
+
 @login_required(login_url='/login/')
 def home (request):
 
@@ -41,9 +41,9 @@ def login(request):
 	   
 def login_redirect (request):
     user = authenticate(
-        username=request.POST['username'],
+    	username=request.POST['username'],
         password=request.POST['password']
-    ) # 
+        ) # 
     if user is not None:
         login(request, user)
         HttpResponseRedirect('/home/')

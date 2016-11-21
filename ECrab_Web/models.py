@@ -11,7 +11,7 @@ class Usuario(models.Model):
 	username = models.TextField(max_length=400) 
 	password = models.TextField(max_length=300)
 
-class Recordatorio (models.Model):
-    user = models.ForeignKey(User) #Check use of ForeignKey
-    date = models.DateField() #Check attributes
-	done = models.BooleanField() #Check
+#class Recordatorio (models.Model):
+    #user = models.ForeignKey(User) #Check use of ForeignKey
+    #date = models.DateField() #Check attributes
+	#done = models.BooleanField() #Check
