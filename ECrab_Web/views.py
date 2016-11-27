@@ -48,10 +48,7 @@ def login_redirect (request):
         HttpResponseRedirect('/home/')
     else: 
         HttpResponseRedirect('/login/')
-		
-		
-		
-
+	
 def main(request):
    pass
    
