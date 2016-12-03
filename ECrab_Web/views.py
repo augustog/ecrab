@@ -6,11 +6,12 @@
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
-#from forms import SignUpForm 
-from django.contrib.auth import authenticate
+from django.contrib import auth
 from django.contrib.auth.decorators import login_required 
+from django.template import RequestContext
+
 import datetime
 
 # Create your views here.
@@ -25,29 +26,28 @@ def home (request):
 
     now= datetime.datetime.now()
     template = loader.get_template('webhome.html')
-    context = {}
-    html = template.render(context, request)
+    #context = {}
+    html = template.render()
    
     return HttpResponse(html)
 	   	   
 	   
 def login(request):
-
     template = loader.get_template('weblog.html')
     #context = {}
-    html = template.render(request)
+    html = template.render()
     return HttpResponse(html)
 
 def login_redirect (request):
-    user = authenticate(
+    user = auth.authenticate(
     	username=request.POST['username'],
         password=request.POST['password']
         ) # 
     if user is not None:
-        login(request, user)
-        HttpResponseRedirect('/home/')
+        auth.login(request, user)
+        return HttpResponseRedirect('/home/')
     else: 
-        HttpResponseRedirect('/login/')
+        return HttpResponseRedirect('/login/')
 	
 def main(request):
    pass
