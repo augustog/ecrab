@@ -29,3 +29,7 @@ class Proyectos (models.Model):
 	initdate = models.DateField() #Fecha en la que se inicia el proyecto
 	findate = models.DateField() #Fecha en la que finaliza
 	#file = ... #El archivo del proyecto
+
+class post (models.Model):
+	#cont = models.pijafield(max_length = 300)
+	date = models.DateField()
