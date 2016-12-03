@@ -10,13 +10,8 @@ class ExtendedUser (models.Model):
 	
 	#Extended user class 
 	
-	user = models.ForeignKey(User)
+	user = models.ForeignKey(User) 
 	#dato = models.XXField()
-
-#class Recordatorio (models.Model):
-    #user = models.ForeignKey(User) #Check use of ForeignKey
-    #date = models.DateField() #Check attributes
-	#done = models.BooleanField() #Check
 
 class Recordatorio (models.Model):
     user = models.ForeignKey(User) #Check use of ForeignKey
@@ -30,6 +25,6 @@ class Proyectos (models.Model):
 	findate = models.DateField() #Fecha en la que finaliza
 	#file = ... #El archivo del proyecto
 
-class post (models.Model):
-	#cont = models.pijafield(max_length = 300)
+class Post (models.Model):
+	cont = models.TextField(max_length = 300)
 	date = models.DateField()
