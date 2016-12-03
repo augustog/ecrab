@@ -57,4 +57,10 @@ def listas (request):
    pass
 
 def perfil(request):
-   pass
+
+    now= datetime.datetime.now()
+    template = loader.get_template('perfil.html')
+    context = {}
+    html = template.render(context, request)
+   
+    return HttpResponse(html)
