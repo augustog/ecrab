@@ -27,19 +27,11 @@ def home (request):
     now= datetime.datetime.now()
     posts = Post.objects.all()[:5]
     template = loader.get_template('webhome.html')
-<<<<<<< HEAD
     context = {
         'day': now,
         'posts': posts
         }
     html = template.render(context)
-
-=======
-    context = {'day':'123'}
-    #context = {'post'}
-    html = template.render( context, request)
-   
->>>>>>> fef40af2cf1b9d35e5885da6cb11d45c3b97c35a
     return HttpResponse(html)
 
 def post(request):
