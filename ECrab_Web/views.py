@@ -26,8 +26,9 @@ def home (request):
 
     now= datetime.datetime.now()
     template = loader.get_template('webhome.html')
-    #context = {}
-    html = template.render()
+    context = {'day':'123'}
+    #context = {'post'}
+    html = template.render( context, request)
    
     return HttpResponse(html)
 	   	   
@@ -60,7 +61,7 @@ def perfil(request):
 
     now= datetime.datetime.now()
     template = loader.get_template('perfil.html')
-    context = {}
+    context = {'day':'123',}
     html = template.render(context, request)
    
     return HttpResponse(html)
