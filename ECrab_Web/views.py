@@ -11,7 +11,7 @@ from django.template import loader
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required 
 from django.template import RequestContext
-
+from .models import Post
 import datetime
 
 # Create your views here.
@@ -25,12 +25,18 @@ def landing(request):
 def home (request):
 
     now= datetime.datetime.now()
+    posts = Post.objects.all()[:5]
     template = loader.get_template('webhome.html')
-    #context = {}
-    html = template.render()
-   
+    context = {
+        'day': now,
+        'posts': posts
+        }
+    html = template.render(context)
+
     return HttpResponse(html)
-	   	   
+
+def post(request):
+    pass
 	   
 def login(request):
     template = loader.get_template('weblog.html')
@@ -58,7 +64,6 @@ def listas (request):
 
 def perfil(request):
 
-    now= datetime.datetime.now()
     template = loader.get_template('perfil.html')
     context = {}
     html = template.render(context, request)
