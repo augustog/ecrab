@@ -119,19 +119,20 @@
 
 
 
-
+{% for post in posts %}
 
 <div id="publicacion" class="colorBackgroundPublicacion">
         <div id="publicador">
             <ul class="publicacion">
                <li><a href="/perfil/"><img class="perfilchico" src="C:\Users\Bruno\ECrab\ECrab_Web\static\img\10959359_318092458387532_5489101843930989000_n.jpg"></a></li>
                &nbsp &nbsp 
-               <li><a href="/perfil/">@Usuario</a></li>
+               <li><a href="/perfil/">{{post.user}}</a></li>
             </ul>
         </div>
         <div id="publicado" class="colorBackgroundPublicado">
-            <p></p>
-
+            <h3>{{post.tittle}}</h3>
+            <p>{{post.body}}</p>
+            <time>{{post.date}}</time>
 
                 <div id="acciones">
                     <ul class="interez">
@@ -158,14 +159,14 @@
 </div>
 </div>
 
-
+{% end for %}
     
 
         <div id="agenda" class="colorBackgroundAgenda">
             <hr/>
             <ul class="agenda">
                 <li><a href="">Mi Agenda</a></li>
-                <div class="menusec"><p>Hoy es: &nbsp &nbsp <strong>{{ day }}</strong></p></div>
+                <div class="menusec"><p>Hoy es: &nbsp &nbsp <strong>{{ day   }}</strong></p></div>
             </ul>
          
              
@@ -180,6 +181,7 @@
                     
                     </div>
             </div>    
+}
 
 
      
