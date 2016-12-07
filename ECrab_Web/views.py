@@ -63,8 +63,9 @@ def listas (request):
 
 def perfil(request):
 
+    now= datetime.datetime.now()
     template = loader.get_template('perfil.html')
-    context = {'day':'123',}
+    context = {'day': now,}
     html = template.render(context, request)
    
     return HttpResponse(html)
