@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'ECrab_Web',
 ]
 
+MEDIA_ROOT = [BASE_DIR+"/media", ] #directorio donde se guardaran los archivos subidos a la aplicacion
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

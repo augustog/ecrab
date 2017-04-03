@@ -28,3 +28,8 @@ class Proyectos (models.Model):
 class Post (models.Model):
 	cont = models.TextField(max_length = 300)
 	date = models.DateField()
+
+# Modelo para subir archivos en la base de datos
+class Document(models.Model):
+	filename = models.CharField(max_length=100)
+	docfile = models.FileField(upload_to='documents/%Y/%m/%d')
